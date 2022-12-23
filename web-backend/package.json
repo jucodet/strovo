@@ -1,0 +1,39 @@
+{
+  "name": "strovo",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "backend NodeJS",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --check .",
+    "start": "node --experimental-specifier-resolution=node src/server",
+    "watch": "nodemon --exec npm start"
+  },
+  "author": "Julien Codet",
+  "license": "UNLICENSED",
+  "volta": {
+    "node": "16.14.2",
+    "npm": "8.5.5"
+  },
+  "dependencies": {
+    "dotenv": "16.0.0",
+    "fastify": "4.9.2",
+    "fastify-mongodb": "4.2.0",
+    "fastify-plugin": "4.3.0",
+    "pino-pretty": "9.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.20",
+    "prettier": "2.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jucodet/strovo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jucodet/strovo/issues"
+  },
+  "homepage": "https://github.com/jucodet/strovo#readme"
+}

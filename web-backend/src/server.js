@@ -7,8 +7,10 @@ const fastify = Fastify({
   logger: {
     level: config.logLevel,
     pino: {
+      target: 'pino-pretty',
       translateTime: true,
       ignore: 'pid,hostname,reqId,responseTime,req,res',
+      colorize: true
     },
   },
 })
