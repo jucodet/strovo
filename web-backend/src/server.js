@@ -22,7 +22,7 @@ fastify.register(routesPlugin)
 
 const start = async () => {
   try {
-    await fastify.listen(3000)
+    await fastify.listen(config.port)
   } catch (err) {
     fastify.log.error(err)
     process.exit(1)
